@@ -1,1 +1,57 @@
-1
+@charset "UTF-8";
+@import "style.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.top{
+    background-color: rgb(225, 255, 143);
+    background-size: contain;
+    height: 800px;
+}
+
+.game__menu{
+    background-color: rgb(32, 32, 39);
+    background-size: contain;
+    height: 1470px;
+}
+
+.game__catalog{
+    background-color: rgb(32, 32, 39);
+    background-size: contain;
+    height: 3500px;
+}
+
+footer{
+    background-color: rgb(189, 237, 53);
+    background-size: contain;
+    height: 150px;
+}
+
+.footer__title{
+    font-family: Montserrat;
+    font-weight: 600;
+    Font-size: 24px;
+    height: 29px;
+    letter-spacing: 0px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-top: 61px;
+}
