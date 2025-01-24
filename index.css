@@ -35,7 +35,6 @@ a {
     font-family: Montserrat;
     font-weight: 700;
     font-size: 64px;
-    height: 78px;
     letter-spacing 0px;
     Align:left;
     width: 768px;
@@ -47,7 +46,6 @@ a {
     font-family: Montserrat;
     font-weight: 400;
     font-size: 24px;
-    height: 32px;
     letter-spacing 0px;
     Align:left;
     width: 720px;
@@ -73,7 +71,6 @@ a {
     font-family: Montserrat;
     font-weight: 700;
     font-size: 64px;
-    height: 78px;
     letter-spacing: 0px;
     Align: left;
     color: rgb(255, 255, 255);
@@ -91,7 +88,6 @@ a {
     Align: left;
     color: rgb(255, 255, 255);
     width: 788px;
-    height: 96px;
     padding-top: 24px;
     padding-left: 119px;
     margin-bottom: 72px;
@@ -132,7 +128,6 @@ a {
     letter-spacing: 0px;
     text-align: left;
     width: 108px;
-    height: 36px;
 /* Auto layout */
     display: flex;
     flex-direction: row;
