@@ -36,7 +36,7 @@ a {
     font-weight: 700;
     font-size: 64px;
     letter-spacing 0px;
-    Align:left;
+    text-align:left;
     width: 768px;
     padding-left: 120px;
     padding-top: 196px;
@@ -47,7 +47,7 @@ a {
     font-weight: 400;
     font-size: 24px;
     letter-spacing 0px;
-    Align:left;
+    text-align:left;
     width: 720px;
     padding-left: 120px;
     padding-top: 96px;
@@ -66,13 +66,17 @@ a {
     margin-top: 68px;
     margin-left: 170px;
 }
+.top__decoration{
+    z-index: 1;
+    background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 153% -230px;
+}
 
 .title{
     font-family: Montserrat;
     font-weight: 700;
     font-size: 64px;
     letter-spacing: 0px;
-    Align: left;
+    text-align: left;
     color: rgb(255, 255, 255);
     padding-top: 94px;
     padding-left: 120px;
@@ -85,7 +89,7 @@ a {
     font-weight: 400;
     font-size: 24px;
     letter-spacing: 0px;
-    Align: left;
+    text-align: left;
     color: rgb(255, 255, 255);
     width: 788px;
     padding-top: 24px;
