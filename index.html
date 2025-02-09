@@ -5,8 +5,173 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heomework1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    
+    <section class="top center">
+        <section class="top__content center">
+            <h1 class="top__title " >
+                Добро пожаловать на&nbsp;мой сайт мини-игр
+            </h1>
+            <p class="top__text">
+                Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <b>«Поехали!»</b> и <b>приступай</b>.
+            </p>
+            <button href="#yakor" class="top__button-link" id="buttonStart" >
+                Поехали!
+            </button>
+
+        </section>
+    </section>
+    <section class="game-menu center">
+        <h1 class="title">
+            <span id="yakor"></span>
+            Об играх
+        </h1>
+        <p class="game-menu__text">
+            В моей коллекции представлено 6 игр на разные темы. Игры&nbsp;несложные — в них может поиграть каждый. Все&nbsp;игры&nbsp;доступны для пользования.
+        </p>
+        <div class="menu-cards center">
+            <div class="menu-cards_box">
+                <a class="menu-card menu-card_1 " href="#">
+                    <img src="./IMG/Обложка карточки-12.png" alt="Угадай число" class="card-img">
+                    <h3 class="card-title"> Игра №1</h3>
+                    <p class="card-text">Угадай число</p>
+                </a>
+                <a class="menu-card menu-card_1 " href="#">
+                    <img src="./IMG/Обложка карточки-11.png" alt="Камень, ножницы, бумага" class="card-img">
+                    <h3 class="card-title"> Игра №4</h3>
+                    <p class="card-text">Камень, <br>ножницы, <br>бумага</p>
+                </a>
+            </div>
+            <div class="menu-cards_box">
+                <a class="menu-card menu-card_2 " href="#">
+                    <img src="./IMG/Обложка карточки-10.png" alt="Простая арифметика" class="card-img">
+                    <h3 class="card-title"> Игра №2</h3>
+                    <p class="card-text">Простая арифметика</p>
+                </a>
+                <a class="menu-card menu-card_2 " href="#">
+                    <img src="./IMG/Обложка карточки-6.png" alt="Простая викторина" class="card-img">
+                    <h3 class="card-title"> Игра №5</h3>
+                    <p class="card-text">Простая викторина</p>
+                </a>
+            </div>
+            <div class="menu-cards_box">
+                <a class="menu-card menu-card_1 " href="#">
+                    <img src="./IMG/Обложка карточки-8.png" alt="Переверни текст" class="card-img">
+                    <h3 class="card-title"> Игра №3</h3>
+                    <p class="card-text">Переверни текст</p>
+                </a>
+                <a class="menu-card menu-card_1 " href="#">
+                    <img src="./IMG/Обложка карточки-7.png" alt="Генератор случайных цветов" class="card-img">
+                    <h3 class="card-title"> Игра №6</h3>
+                    <p class="card-text">Генератор случайных цветов</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="game-catalog center">
+        <h1 class="game-catalog__title">
+            Мини-игры
+        </h1>
+        <section class="center">
+        <a class="game-card">
+            <div class="game-card__text-1">
+            <h2 class="text-title">
+                Угадай число
+            </h2>
+            <p class="text-description">
+                Попробуй угадать случайное число от 1 до 100.
+            </p>
+            <button type="button" href="#" class="game-card__button">
+                Играть!
+            </button>
+            </div>
+            <img src="./IMG/Обложка карточки-24.png" alt="обложка игры" class="game-card__img">
+        </a>
+        <a class="game-card2">
+            <img src="./IMG/Обложка карточки-23.png" alt="обложка игры" class="game-card__img">
+            <div class="game-card__text-2">
+            <h2 class="text-title">
+                Простая арифметика
+            </h2>
+            <p class="text-description">
+                Попробуй решить простые арифметические задачи.
+            </p>
+            <button type="button" href="#" class="game-card__button">
+                Играть!
+            </button>
+            </div>
+        </a>
+        <a class="game-card">
+            <div class="game-card__text-1">
+            <h2 class="text-title">
+                Переверни текст
+            </h2>
+            <p class="text-description">
+                Попробуй ввести текст, который будет перевернут.
+            </p>
+            <button type="button" href="#" class="game-card__button">
+                Играть!
+            </button>
+            </div>
+            <img src="./IMG/Обложка карточки-22.png" alt="обложка игры" class="game-card__img">
+        </a>
+        <a class="game-card2">
+            <img src="./IMG/Обложка карточки-21.png" alt="обложка игры" class="game-card__img">
+            <div class="game-card__text-2">
+            <h2 class="text-title">
+                Викторина
+            </h2>
+            <p class="text-description">
+                Отвечай на вопросы викторины с вариантами ответов.
+            </p>
+            <button type="button" href="#" class="game-card__button">
+                Играть!
+            </button>
+            </div>
+        </a>
+        <a class="game-card">
+            <div class="game-card__text-1">
+            <h2 class="text-title">
+                Камень, ножницы, бумага
+            </h2>
+            <p class="text-description">
+                Сыграй в популярную игру против компьютера.
+            </p>
+            <button type="button" href="#" class="game-card__button">
+                Играть!
+            </button>
+            </div>
+            <img src="./IMG/Обложка карточки-20.png" alt="обложка игры" class="game-card__img">
+        </a>
+        <a class="game-card2">
+            <img src="./IMG/Обложка карточки-19.png" alt="обложка игры" class="game-card__img">
+            <div class="game-card__text-2">
+            <h2 class="text-title">
+                Генератор случайных цветов
+            </h2>
+            <p class="text-description">
+                Игра, в которой при клике на кнопку фон страницы меняется на случайный.
+            </p>
+            <button type="button" href="#" class="game-card__button">
+                Играть!
+            </button>
+            </div>
+        </a>
+        </section>
+    </section>
+
 </body>
+<footer>
+    <h3 class="footer-title">
+        Все права защищены
+    </h3>
+</footer>
 </html>

@@ -1,0 +1,315 @@
+@charset "UTF-8";
+@import "style.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.top{
+    height: 800px;
+    background-image: url(./IMG/top__img.jpeg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+}
+.top__content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    
+}
+.top__title{
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 64px;
+    letter-spacing 0px;
+    text-align:left;
+    width: 768px;
+    padding-left: 120px;
+    padding-top: 196px;
+    margin-left: 40px;
+}
+.top__text{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing 0px;
+    text-align:left;
+    width: 720px;
+    padding-left: 120px;
+    padding-top: 96px;
+    margin-left: 40px;
+}
+.top__button-link{
+    background-color: rgb(32, 32, 39);
+    height: 66px;
+    width: 247px;
+    padding: 16px 28px;
+    border-radius: 40px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    margin-top: 68px;
+    margin-left: 170px;
+}
+
+
+.title{
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 64px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    padding-top: 94px;
+    padding-left: 120px;
+    margin-left: 40px;
+}
+
+/* Об играх */
+.game-menu__text{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    width: 788px;
+    padding-top: 24px;
+    padding-left: 119px;
+    margin-bottom: 72px;
+    margin-left: 40px;
+}
+.game-menu{
+    box-sizing: border-box;
+    background: url(./IMG/for__gamesBG.png);
+    background-repeat: no-repeat;
+    background-color: rgb(32, 32, 39);
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+.menu-cards{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    justify-items: center;
+    gap: 32px;
+}
+.menu-cards_box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+.menu-card{
+    display: grid;
+    grid-column: span 4;
+    background-color: rgb(255, 255, 255);
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0px;
+    text-align: left;
+    border-radius: 30px;
+    box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
+    background: rgb(255, 255, 255);
+}
+
+.card-title{
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: 0px;
+    text-align: left;
+    width: 108px;
+/* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 9px 16px;
+/* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border-radius: 52px;
+    background: rgb(247, 247, 247);
+    margin: 32px 0px 0px 32px;
+}
+.card-img{
+    height: 314px;
+    width: 379px;
+}
+.card-text{
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin: 16px 32px 32px 32px;
+}
+
+/* Мини-игры */
+.game-catalog{
+    background: url(./IMG/mini-gamesBG.png);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    background-repeat: no-repeat;
+}
+.game-catalog__title{
+    color: rgb(255, 255, 255);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-bottom: 72px;
+    padding-top: 14px;
+}
+.game-card{
+    position: static;
+    width: 1200px;
+    height: 500px;
+/* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+/* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 32px 0px;
+    border-radius: 30px;
+    box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+    background: rgb(255, 255, 255);
+    justify-content: space-between;
+}
+.game-card2{
+    position: static;
+    width: 1200px;
+    height: 500px;
+/* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+/* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 32px 0px;
+    border-radius: 30px;
+    box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+    background: rgb(255, 255, 255);
+    justify-content: flex-start;
+}
+.game-card__text-1{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+padding: 48px 48px;
+}
+.game-card__text-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 48px 48px;
+}
+.text-title{
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.game-card__img{
+    width: 600px;
+    height: 500px;
+}
+.text-description{
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-top: 24px;
+    margin-bottom: 36px;
+}
+.game-card__button{
+    width: 247px;
+    height: 66px;
+/* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10;
+    padding: 16px 28px 16px 28px;
+
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+
+/* Футер */
+footer{
+    background-color: rgb(189, 237, 53);
+    background-size: contain;
+    height: 150px;
+}
+
+.footer-title{
+    font-family: Montserrat;
+    font-weight: 600;
+    Font-size: 24px;
+    height: 29px;
+    letter-spacing: 0px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-top: 61px;
+}
