@@ -97,7 +97,7 @@ a {
     background-size: cover;
     padding-bottom: 50px;
 }
-.game-menu_content{
+.game-menu__content{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -112,7 +112,7 @@ a {
     justify-items: center;
     gap: 32px;
 }
-.menu-cards_box{
+.menu-cards__box{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -214,7 +214,7 @@ a {
     background: rgb(255, 255, 255);
     justify-content: space-between;
 }
-.game-card2{
+.card_reverse{
     position: static;
     width: 1200px;
     height: 500px;
@@ -235,20 +235,14 @@ a {
     background: rgb(255, 255, 255);
     justify-content: flex-start;
 }
-.game-card__text-1{
+.game-card__text{
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
 align-items: flex-start;
 padding: 48px 48px;
 }
-.game-card__text-2{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin: 48px 48px;
-}
+
 .text-title{
     color: rgb(32, 32, 39);
     font-family: Montserrat;
