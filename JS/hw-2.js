@@ -1,5 +1,5 @@
 //задание 1//
-Let a = 10;
+let a = 10;
 alert(a);
 a = 20;
 alert(a);
@@ -7,8 +7,8 @@ alert(a);
 //задание 2//
 let question = 'Когда вышел первый Iphone?';
 alert(question);
-Let fistIphone = '9 января 2007 года';
-Let phrase = `Первый Iphone вышел ${firstIphone}`;
+let fistIphone = '9 января 2007 года';
+let phrase = `Первый Iphone вышел ${firstIphone}`;
 alert(phrase)
 
 //задание 3//
@@ -49,7 +49,7 @@ alert(num);
 
 //задание 8//
 let age = prompt("Сколько вам лет?");
-alert('Вам ${age} лет.');
+alert('Количество полных лет '+ age);
 
 //задание 9//
 let user = {
@@ -59,8 +59,8 @@ let user = {
 console.log(user);
 
 //задание 10//
-let name = prompt("Как вас зовут?");
-alert('Привет, ${name}!');
+let uname = prompt("Как вас зовут?");
+alert('Привет,' + uname);
 
 //Доп задание//
 let nam = prompt("Загадайте любое число");
