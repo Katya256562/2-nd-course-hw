@@ -31,18 +31,19 @@ a {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: flex-start;
-    
+    row-gap: 24px;
+    justify-content: start;
+    align-items: start;
+    padding-top: 196px;
 }
 .top__title{
-    font-family: Montserrat;
-    font-weight: 700;
+    color: rgb(32, 32, 39);
     font-size: 64px;
-    letter-spacing 0px;
-    text-align:left;
-    width: 768px;
-    padding-left: 120px;
-    padding-top: 196px;
-    margin-left: 40px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0px;
+    text-align: left;
+    max-width: 769px;
 }
 .top__text{
     font-family: Montserrat;
@@ -51,9 +52,6 @@ a {
     letter-spacing 0px;
     text-align:left;
     width: 720px;
-    padding-left: 120px;
-    padding-top: 96px;
-    margin-left: 40px;
 }
 .top__button-link{
     background-color: rgb(32, 32, 39);
@@ -65,8 +63,6 @@ a {
     font-weight: 600;
     font-size: 24px;
     color: rgb(255, 255, 255);
-    margin-top: 68px;
-    margin-left: 170px;
 }
 
 
@@ -75,11 +71,8 @@ a {
     font-weight: 700;
     font-size: 64px;
     letter-spacing: 0px;
-    text-align: left;
     color: rgb(255, 255, 255);
     padding-top: 94px;
-    padding-left: 120px;
-    margin-left: 40px;
 }
 
 /* Об играх */
@@ -92,9 +85,8 @@ a {
     color: rgb(255, 255, 255);
     width: 788px;
     padding-top: 24px;
-    padding-left: 119px;
     margin-bottom: 72px;
-    margin-left: 40px;
+    
 }
 .game-menu{
     box-sizing: border-box;
@@ -105,13 +97,22 @@ a {
     background-size: cover;
     padding-bottom: 50px;
 }
+.game-menu__content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    row-gap: 24px;
+    justify-content: start;
+    align-items: start;
+}
 .menu-cards{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     justify-items: center;
     gap: 32px;
 }
-.menu-cards_box{
+.menu-cards__box{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -180,6 +181,7 @@ a {
     flex-direction: column;
     row-gap: 32px;
     background-repeat: no-repeat;
+    padding-bottom: 112px;
 }
 .game-catalog__title{
     color: rgb(255, 255, 255);
@@ -188,8 +190,8 @@ a {
     line-height: 78px;
     letter-spacing: 0px;
     text-align: left;
-    padding-bottom: 72px;
-    padding-top: 14px;
+    padding-bottom: 8px;
+    padding-top: 42px;
 }
 .game-card{
     position: static;
@@ -212,7 +214,7 @@ a {
     background: rgb(255, 255, 255);
     justify-content: space-between;
 }
-.game-card2{
+.game-card-reverse{
     position: static;
     width: 1200px;
     height: 500px;
@@ -232,21 +234,16 @@ a {
     box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
     background: rgb(255, 255, 255);
     justify-content: flex-start;
+    flex-direction: row-reverse;
 }
-.game-card__text-1{
+.game-card-text{
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
 align-items: flex-start;
 padding: 48px 48px;
 }
-.game-card__text-2{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin: 48px 48px;
-}
+
 .text-title{
     color: rgb(32, 32, 39);
     font-family: Montserrat;
@@ -256,7 +253,7 @@ padding: 48px 48px;
     letter-spacing: 0px;
     text-align: left;
 }
-.game-card__img{
+.game-card-img{
     width: 600px;
     height: 500px;
 }
@@ -271,7 +268,7 @@ padding: 48px 48px;
     margin-top: 24px;
     margin-bottom: 36px;
 }
-.game-card__button{
+.game-card-button{
     width: 247px;
     height: 66px;
 /* Auto layout */
@@ -312,4 +309,133 @@ footer{
     flex-wrap: nowrap;
     justify-content: center;
     padding-top: 61px;
+}
+
+@media(max-width: 376px){
+    .center {
+        padding-left: calc(50% - 187px);
+        padding-right: calc(50% - 187px);
+    }
+
+    .game-menu{
+        display: none;
+    }
+    .top{
+        background-image: none;
+        background-image: url(../IMG/r-1);
+    }
+    .top__content{
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+    .top__title{
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 49px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+    .top__text{
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0px;
+        width: 300px;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+    .top__button{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .top__button-link{
+        box-sizing: border-box;
+        border: 1px solid rgb(32, 32, 39);
+        border-radius: 60px;
+        background: rgb(32, 32, 39);
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 141.69%;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+    .game-catalog{
+        width: 375px;
+        
+    }
+    .game-catalog__title{
+        font-size: 40px;
+        line-height: 49px;
+        align-items: start;
+        padding-top: 48px;
+        padding-bottom: 48px;
+        padding-left: 16px;
+    }
+    .game {
+        align-items: center;
+        row-gap: 24px;
+        width: 343px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding-left: 16px;
+        
+    }
+    
+    .game-card{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0px;
+    }
+    .game-card-reverse{
+        margin: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0px;
+    }
+    .game-card-text{
+        row-gap: 16px;
+        padding: 16px 28px 16px 28px;
+    }
+    .text-title{
+        font-size: 32px;
+        line-height: 39px;
+        font-weight: 700;
+    }
+    .text-description{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        margin: 0px 0px;
+    }
+    .game-card-form{
+        padding-top: 12px;
+    }
+    .game-card-button{
+        width: 288px;
+        height: 55px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 141.69%;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+    .game-card-img{
+        width: 100%;
+    }
 }
