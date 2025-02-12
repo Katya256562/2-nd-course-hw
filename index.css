@@ -322,7 +322,12 @@ footer{
     }
     .top{
         background-image: none;
-        background-image: url(/2-nd-course-hw/IMG/r-1);
+        background-image: url(../IMG/r-1);
+    }
+    .top__content{
+        display: flex;
+        align-items: center;
+        gap: 24px;
     }
     .top__title{
         color: rgb(32, 32, 39);
@@ -340,6 +345,13 @@ footer{
         font-weight: 400;
         line-height: 20px;
         letter-spacing: 0px;
+        width: 300px;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+    .top__button{
+        display: flex;
+        justify-content: center;
         text-align: center;
     }
     .top__button-link{
@@ -355,16 +367,75 @@ footer{
         letter-spacing: 0%;
         text-align: center;
     }
+    .game-catalog{
+        width: 375px;
+        
+    }
+    .game-catalog__title{
+        font-size: 40px;
+        line-height: 49px;
+        align-items: start;
+        padding-top: 48px;
+        padding-bottom: 48px;
+        padding-left: 16px;
+    }
     .game {
         align-items: center;
         row-gap: 24px;
-        padding-bottom: 48px;
+        width: 343px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding-left: 16px;
+        
     }
+    
     .game-card{
         width: 100%;
         display: flex;
         flex-direction: column-reverse;
         justify-content: flex-start;
         align-items: flex-start;
+        margin: 0px;
+    }
+    .game-card-reverse{
+        margin: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0px;
+    }
+    .game-card-text{
+        row-gap: 16px;
+        padding: 16px 28px 16px 28px;
+    }
+    .text-title{
+        font-size: 32px;
+        line-height: 39px;
+        font-weight: 700;
+    }
+    .text-description{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        margin: 0px 0px;
+    }
+    .game-card-form{
+        padding-top: 12px;
+    }
+    .game-card-button{
+        width: 288px;
+        height: 55px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 141.69%;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+    .game-card-img{
+        width: 100%;
     }
 }
