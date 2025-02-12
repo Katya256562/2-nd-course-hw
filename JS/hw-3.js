@@ -41,7 +41,7 @@ else {prompt('Неверно')}
 
 let a = '2';
 let b = '3';
-alert(String(a) + String(b));
+alert(Number(a) + Number(b));
 
 
 // Задание 5
