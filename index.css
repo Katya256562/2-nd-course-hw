@@ -133,7 +133,12 @@ a {
     box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
     background: rgb(255, 255, 255);
 }
-
+.menu-card:hover{
+    transform: scale(1.1);
+}
+.menu-card{
+    transition: all 1s;
+}
 .card-title{
     color: rgb(32, 32, 39);
     font-family: Montserrat;
@@ -214,6 +219,13 @@ a {
     background: rgb(255, 255, 255);
     justify-content: space-between;
 }
+
+.game-card:hover{
+    transform: scale(1.05);
+}
+.game-card{
+    transition: all 1s;
+}
 .game-card-reverse{
     position: static;
     width: 1200px;
@@ -288,6 +300,14 @@ padding: 48px 48px;
     line-height: 141.69%;
     letter-spacing: 0%;
     text-align: center;
+}
+.game-card-button:hover{
+    transform: scale(1.1);
+    background-color: rgb(165, 255, 149);
+    color: rgb(32, 32, 39);
+}
+.game-card-button{
+    transition: all 0.5s;
 }
 
 

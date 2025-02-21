@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess_the_number</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <script>
+        function guessTheNumber() {
+
+    const randomNumber = Math.floor(Math.random() * 100) + 1;
+    let userGuess = 0; // Для хранения предположения пользователя
+    let attempts = 0; // Счетчик попыток
+
+    console.log("Угадайте число от 1 до 100!");
+
+    while (userGuess !== randomNumber) {
+    
+        userGuess = parseInt(prompt("Введите ваше предположение:"), 10);
+        attempts++;
+
+        if (isNaN(userGuess)) {
+            console.log("Пожалуйста, введите действительное число.");
+            continue;
+        }
+
+        if (userGuess < randomNumber) {
+            console.log("Слишком мало! Попробуйте еще раз.");
+        } else if (userGuess > randomNumber) {
+            console.log("Слишком много! Попробуйте еще раз.");
+        } else {
+            console.log(`Поздравляем! Вы угадали число ${randomNumber} за ${attempts} попыток.`);
+        }
+    }
+}
+
+guessTheNumber();
+    </script>
+</body>
+<footer>
+
+</footer>
