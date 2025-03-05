@@ -166,5 +166,6 @@ function formatDate(date) {
     return `${dateString}\n${timeString}`;
 }
 
+
 const currentDate = new Date();
 console.log(formatDate(currentDate));
