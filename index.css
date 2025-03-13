@@ -20,7 +20,7 @@ a {
 }
 
 .top{
-    height: 800px;
+    height: 700px;
     background-image: url(./IMG/top__img.jpeg);
     background-repeat: no-repeat;
     background-position: right;
@@ -35,6 +35,7 @@ a {
     justify-content: start;
     align-items: start;
     padding-top: 196px;
+    padding-bottom: 175px;
 }
 .top__title{
     color: rgb(32, 32, 39);
@@ -323,26 +324,26 @@ padding: 48px 48px;
 footer{
     background-color: rgb(189, 237, 53);
     background-size: contain;
-    height: 150px;
 }
 
 .footer-title{
     font-family: Montserrat;
     font-weight: 600;
-    Font-size: 24px;
-    height: 29px;
+    Font-size: 16px;
+    height: 20px;
     letter-spacing: 0px;
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
     justify-content: center;
-    padding-top: 61px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 @media(max-width: 1024px){
     .center {
-        padding-left: 24px;
-        padding-right: 24px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     .game-menu{
@@ -401,19 +402,16 @@ footer{
         line-height: 49px;
         align-items: start;
         padding-top: 48px;
-        padding-bottom: 48px;
         padding-left: 16px;
+        padding-bottom: 16px;
     }
     .game {
         align-items: center;
         row-gap: 24px;
-    
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: center;
-        padding-left: 16px;
-        
     }
     
     .game-card{
