@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock_paper_scissors</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <script>
+        function getComputerChoice() {
+            const options = ["камень", "ножницы", "бумага"];
+            const randomIndex = Math.floor(Math.random() * options.length);
+            return options[randomIndex];
+        }
+
+        function determineWinner(userChoice, computerChoice) {
+            if (userChoice === computerChoice) {
+                return "ничья";
+            } else if (
+                (userChoice === "камень" && computerChoice === "ножницы") ||
+                (userChoice === "ножницы" && computerChoice === "бумага") ||
+                (userChoice === "бумага" && computerChoice === "камень")
+            ) {
+                return "победа";
+            } else {
+                return "поражение";
+            }
+        }
+
+        function playGame() {
+            let userChoice;
+            do {
+                userChoice = prompt("Выберите: 'камень', 'ножницы' или 'бумага'").toLowerCase();
+            } while (!["камень", "ножницы", "бумага"].includes(userChoice) && userChoice !== null);
+
+            if (!userChoice) {
+                alert("Игра окончена.");
+                return;
+            }
+
+            const computerChoice = getComputerChoice();
+            console.log(`Ваш выбор: ${userChoice}`);
+            console.log(`Выбор компьютера: ${computerChoice}`);
+
+            const result = determineWinner(userChoice, computerChoice);
+            console.log(`Результат игры: ${result}`);
+        }
+
+        playGame();
+    </script>
+</body>
+<footer>
+
+</footer>
+</html>
