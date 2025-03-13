@@ -5,51 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock_paper_scissors</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@500;600&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <script>
-function getComputerChoice() {
-    const options = ["камень", "ножницы", "бумага"];
-    const randomIndex = Math.floor(Math.random() * options.length);
-    return options[randomIndex];
-}
+        function getComputerChoice() {
+            const options = ["камень", "ножницы", "бумага"];
+            const randomIndex = Math.floor(Math.random() * options.length);
+            return options[randomIndex];
+        }
 
-function determineWinner(userChoice, computerChoice) {
-    if (userChoice === computerChoice) {
-        return "ничья";
-    } else if (
-        (userChoice === "камень" && computerChoice === "ножницы") ||
-        (userChoice === "ножницы" && computerChoice === "бумага") ||
-        (userChoice === "бумага" && computerChoice === "камень")
-    ) {
-        return "победа";
-    } else {
-        return "поражение";
-    }
-}
+        function determineWinner(userChoice, computerChoice) {
+            if (userChoice === computerChoice) {
+                return "ничья";
+            } else if (
+                (userChoice === "камень" && computerChoice === "ножницы") ||
+                (userChoice === "ножницы" && computerChoice === "бумага") ||
+                (userChoice === "бумага" && computerChoice === "камень")
+            ) {
+                return "победа";
+            } else {
+                return "поражение";
+            }
+        }
 
-function playGame() {
-    const userChoice = prompt("Выберите: 'камень', 'ножницы' или 'бумага'").toLowerCase();
-    const computerChoice = getComputerChoice();
+        function playGame() {
+            let userChoice;
+            do {
+                userChoice = prompt("Выберите: 'камень', 'ножницы' или 'бумага'").toLowerCase();
+            } while (!["камень", "ножницы", "бумага"].includes(userChoice) && userChoice !== null);
 
-    console.log(`Ваш выбор: ${userChoice}`);
-    console.log(`Выбор компьютера: ${computerChoice}`);
+            if (!userChoice) {
+                alert("Игра окончена.");
+                return;
+            }
 
-    const result = determineWinner(userChoice, computerChoice);
-    console.log(`Результат игры: ${result}`);
-}
+            const computerChoice = getComputerChoice();
+            console.log(`Ваш выбор: ${userChoice}`);
+            console.log(`Выбор компьютера: ${computerChoice}`);
 
-playGame();
-</script>
+            const result = determineWinner(userChoice, computerChoice);
+            console.log(`Результат игры: ${result}`);
+        }
+
+        playGame();
+    </script>
 </body>
 <footer>
 
 </footer>
+</html>
