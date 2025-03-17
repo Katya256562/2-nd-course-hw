@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Викторина</h1>
+    <script>
+        const quiz = [
+            {
+                question: "Какой цвет небо?",
+                options: ["1. Красный", "2. Синий", "3. Зеленый"],
+                correctAnswer: 2
+            },
+            {
+                question: "Сколько дней в неделе?",
+                options: ["1. Шесть", "2. Семь", "3. Восемь"],
+                correctAnswer: 2
+            },
+            {
+                question: "Сколько у человека пальцев на одной руке?",
+                options: ["1. Четыре", "2. Пять", "3. Шесть"],
+                correctAnswer: 2
+            }
+        ];
+
+        let rightScore = 0;
+
+        function startQuiz() {
+            for (let i = 0; i < quiz.length; i++) {
+                const q = quiz[i];
+                let optionsString = q.options.join('\n');
+                let userAnswer = prompt(`${q.question}\n${optionsString}\nВведите номер вашего ответа:`);
+
+                if (parseInt(userAnswer) === q.correctAnswer) {
+                    rightScore++;
+                }
+            }
+
+            alert(`Вы ответили правильно на ${rightScore} из ${quiz.length} вопросов.`);
+        }
+
+        startQuiz();
+    </script>
+</body>
+</html>
