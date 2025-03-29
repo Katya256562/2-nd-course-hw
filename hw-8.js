@@ -13,20 +13,20 @@
 // console.log(people.sort(...));
 // код выше должен вывеcти =>
 // [
-// //  { name: 'Олег', age: 7 },
-// //  { name: 'Анна', age: 17 },
-// //  { name: 'Глеб', age: 29 },
-// //  { name: 'Оксана', age: 47 }
+//    { name: 'Олег', age: 7 },
+//    { name: 'Анна', age: 17 },
+//    { name: 'Глеб', age: 29 },
+//    { name: 'Оксана', age: 47 }
 // ]
 
-const people = [
+const peopleSort = [
     { name: 'Глеб', age: 29 },
     { name: 'Анна', age: 17 },
     { name: 'Олег', age: 7 },
     { name: 'Оксана', age: 47 }
 ];
 
-console.log(people.sort((a, b) => a.age - b.age));
+console.log(peopleSort.sort((a, b) => a.age - b.age));
 
 
 // Задание 2
