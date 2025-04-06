@@ -182,7 +182,7 @@ console.log(negativeArray);
 //  в диапазоне от 0 до 10. В данном массиве найдите все четные значения и добавьте их в новый массив.
 // Результат работы программы необходимо вывести в консоль — это будут два массива: исходный массив и массив с четными значениями.
 
-function generateRandomArray(size) {
+function generateRandomArray14(size) {
     const randomArray = [];
     for (let i = 0; i < size; i++) {
         randomArray.push(Math.floor(Math.random() * 11));
@@ -194,7 +194,7 @@ function getEvenNumbers(numbers) {
     return numbers.filter(num => num % 2 === 0);
 }
 
-const inputArray14 = generateRandomArray(10);
+const inputArray14 = generateRandomArray14(10);
 const evenArray = getEvenNumbers(inputArray14);
 
 console.log("Исходный массив:", inputArray14);
@@ -205,7 +205,7 @@ console.log("Массив четных значений:", evenArray);
 //  в диапазоне от 1 до 10.
 // Требуется найти среднее арифметическое этих цифр, результат программы вывести в консоль.
 
-function generateRandomArray(size) {
+function generateRandomArray15(size) {
     const randomArray = [];
     for (let i = 0; i < size; i++) {
         randomArray.push(Math.floor(Math.random() * 10) + 1);
@@ -218,7 +218,7 @@ function calculateAverage(numbers) {
     return sum / numbers.length;
 }
 
-const inputArray = generateRandomArray(6);
+const inputArray = generateRandomArray15(6);
 const average = calculateAverage(inputArray);
 
 console.log("Исходный массив:", inputArray);
