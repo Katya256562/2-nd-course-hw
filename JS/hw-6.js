@@ -4,13 +4,13 @@
 // Создайте цикл, который будет выводить элементы массива до тех пор, пока не встретит значение 
 // 10. После вывода значения 10  в консоль цикл должен прекратить свою работу.
 
-const array = [1, 5, 4, 10, 0, 3];
+const array1 = [1, 5, 4, 10, 0, 3];
 
-for (let i = 0; i < array.length; i++) {
+for (let i = 0; i < array1.length; i++) {
 
-    console.log(array[i]);
+    console.log(array1[i]);
     
-    if (array[i] === 10) {
+    if (array1[i] === 10) {
         break;
     }
 }
@@ -20,9 +20,9 @@ for (let i = 0; i < array.length; i++) {
 // [1, 5, 4, 10, 0, 3].
 // Найдите индекс значения 4 в этом массиве.
 
-const array = [1, 5, 4, 10, 0, 3];
+const array2 = [1, 5, 4, 10, 0, 3];
 
-const index = array.indexOf(4);
+const index = array2.indexOf(4);
 
 if (index !== -1) {
     console.log(`Индекс значения 4 в массиве: ${index}`);
@@ -34,9 +34,9 @@ if (index !== -1) {
 // Дан массив чисел: [1, 3, 5, 10, 20].
 // С помощью метода join выведите элементы массива через пробел (пустую строку ' ').
 
-const array = [1, 3, 5, 10, 20];
+const array3 = [1, 3, 5, 10, 20];
 
-const result = array.join(' ');
+const result = array3.join(' ');
 
 console.log(result);
 
@@ -67,11 +67,11 @@ console.log(multiArray);
 // [1, 1, 1].
 // Добавьте в конец массива значения 2, 2, 2.
 
-const array = [1, 1, 1];
+const array5 = [1, 1, 1];
 
-array.push(2, 2, 2);
+array5.push(2, 2, 2);
 
-console.log(array);
+console.log(array5);
 
 // Задание 6
 // Дан массив:
@@ -79,9 +79,9 @@ console.log(array);
 // С помощью метода sort отсортируйте массив и удалите букву 'a' из массива.
 // Затем выведите массив.
 
-const array = [9, 8, 7, 'a', 6, 5];
+const array6 = [9, 8, 7, 'a', 6, 5];
 
-const filteredArray = array.filter(item => item !== 'a');
+const filteredArray = array6.filter(item => item !== 'a');
 
 const sortedArray = filteredArray.sort((a, b) => a - b);
 
@@ -94,13 +94,13 @@ console.log(sortedArray);
 // Если значение, которое ввел пользователь, есть в массиве, выведите в
 // alert  «Угадал», в противном случае — «Не угадал».
 
-const array = [9, 8, 7, 6, 5];
+const array7 = [9, 8, 7, 6, 5];
 
 const userGuess = prompt("Угадайте число из массива: [9, 8, 7, 6, 5]");
 
 const guessedNumber = Number(userGuess);
 
-if (array.includes(guessedNumber)) {
+if (array7.includes(guessedNumber)) {
     alert("Угадал");
 } else {
     alert("Не угадал");
@@ -148,8 +148,8 @@ function getSquares(numbers) {
     return numbers.map(num => num * num);
 }
 
-const inputArray = [1, 2, 3, 4, 5];
-const squaresArray = getSquares(inputArray);
+const inputArray11 = [1, 2, 3, 4, 5];
+const squaresArray = getSquares(inputArray11);
 
 console.log(squaresArray);
 
@@ -160,8 +160,8 @@ function getWordLengths(words) {
     return words.map(word => word.length);
 }
 
-const inputArray = ["apple", "banana", "cherry", "date"];
-const lengthsArray = getWordLengths(inputArray);
+const inputArray12 = ["apple", "banana", "cherry", "date"];
+const lengthsArray = getWordLengths(inputArray12);
 
 console.log(lengthsArray);
 
@@ -172,8 +172,8 @@ function getNegativeNumbers(numbers) {
     return numbers.filter(num => num < 0);
 }
 
-const inputArray = [1, -2, 3, -4, 5, -6];
-const negativeArray = getNegativeNumbers(inputArray);
+const inputArray13 = [1, -2, 3, -4, 5, -6];
+const negativeArray = getNegativeNumbers(inputArray13);
 
 console.log(negativeArray);
 
@@ -182,7 +182,7 @@ console.log(negativeArray);
 //  в диапазоне от 0 до 10. В данном массиве найдите все четные значения и добавьте их в новый массив.
 // Результат работы программы необходимо вывести в консоль — это будут два массива: исходный массив и массив с четными значениями.
 
-function generateRandomArray(size) {
+function generateRandomArray14(size) {
     const randomArray = [];
     for (let i = 0; i < size; i++) {
         randomArray.push(Math.floor(Math.random() * 11));
@@ -194,10 +194,10 @@ function getEvenNumbers(numbers) {
     return numbers.filter(num => num % 2 === 0);
 }
 
-const inputArray = generateRandomArray(10);
-const evenArray = getEvenNumbers(inputArray);
+const inputArray14 = generateRandomArray14(10);
+const evenArray = getEvenNumbers(inputArray14);
 
-console.log("Исходный массив:", inputArray);
+console.log("Исходный массив:", inputArray14);
 console.log("Массив четных значений:", evenArray);
 
 // Задание 15
@@ -205,7 +205,7 @@ console.log("Массив четных значений:", evenArray);
 //  в диапазоне от 1 до 10.
 // Требуется найти среднее арифметическое этих цифр, результат программы вывести в консоль.
 
-function generateRandomArray(size) {
+function generateRandomArray15(size) {
     const randomArray = [];
     for (let i = 0; i < size; i++) {
         randomArray.push(Math.floor(Math.random() * 10) + 1);
@@ -218,7 +218,7 @@ function calculateAverage(numbers) {
     return sum / numbers.length;
 }
 
-const inputArray = generateRandomArray(6);
+const inputArray = generateRandomArray15(6);
 const average = calculateAverage(inputArray);
 
 console.log("Исходный массив:", inputArray);
