@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Веб-интерактивные элементы</title>
+    <style>
+        #myTitle {
+            transition: opacity 0.5s;
+        }
+        #myParagraph {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Задание 1. Скрытие и показ текста -->
+    <h1 id="myTitle">Привет, это заголовок!</h1>
+    <button id="toggleButton">Скрыть</button>
+
+    <!-- Задание 2. Изменение стиля элемента -->
+    <p id="myParagraph">Это текст абзаца, который будет изменен.</p>
+    <button id="changeColorButton">Изменить цвет</button>
+
+    <!-- Задание 3. Динамическое изменение текста -->
+    <h1 id="myHeader">Исходный текст заголовка</h1>
+    <button id="changeTextButton">Изменить текст</button>
+
+    <!-- Задание 4. Поиск и изменение элементов по классу -->
+    <div class="description">Первый текст описания.</div>
+    <div class="description">Второй текст описания.</div>
+    <div class="description">Третий текст описания.</div>
+    <div class="description">Четвертый текст описания.</div>
+    <button id="changeDescriptionTextButton">Изменить текст элементов</button>
+
+    <!-- Задание 5. Работа с querySelectorAll -->
+    <p class="description">Первый текст описания.</p>
+    <p class="text">Этот текст не изменится.</p>
+    <p class="description">Второй текст описания.</p>
+    <p class="another-class">Текст с другим классом.</p>
+    <p class="description">Третий текст описания.</p>
+    <button id="changeQuerySelectorTextButton">Изменить текст с querySelectorAll</button>
+
+    <!-- Задание 6. Добавление нового элемента в DOM -->
+    <button id="addElementButton">Добавить элемент</button>
+
+    <!-- Задание 7. Удаление элемента -->
+    <button id="removeElementButton">Удалить элемент</button>
+
+    <script>
+        // Задание 1. Скрытие и показ текста
+        const title = document.querySelector('#myTitle');
+        const toggleButton = document.querySelector('#toggleButton');
+
+        toggleButton.addEventListener('click', () => {
+            if (title.style.display === 'none') {
+                title.style.display = 'block';
+                toggleButton.textContent = 'Скрыть';
+            } else {
+                title.style.display = 'none';
+                toggleButton.textContent = 'Показать';
+            }
+        });
+
+        // Задание 2. Изменение стиля элемента
+        const paragraph = document.querySelector('#myParagraph');
+        const changeColorButton = document.querySelector('#changeColorButton');
+
+        changeColorButton.addEventListener('click', () => {
+            paragraph.style.color = 'blue';
+        });
+
+        // Задание 3. Динамическое изменение текста
+        const header = document.querySelector('#myHeader');
+        const changeTextButton = document.querySelector('#changeTextButton');
+
+        changeTextButton.addEventListener('click', () => {
+            header.textContent = 'Привет, мир!';
+        });
+
+        // Задание 4. Поиск и изменение элементов по классу
+        const descriptionElements = document.querySelectorAll('.description');
+        const changeDescriptionTextButton = document.querySelector('#changeDescriptionTextButton');
+
+        changeDescriptionTextButton.addEventListener('click', () => {
+            descriptionElements.forEach(element => {
+                element.textContent = 'Измененный текст';
+            });
+        });
+
+        // Задание 5. Работа с querySelectorAll
+        const queryDescriptionElements = document.querySelectorAll('.description');
+        const changeQuerySelectorTextButton = document.querySelector('#changeQuerySelectorTextButton');
+
+        changeQuerySelectorTextButton.addEventListener('click', () => {
+            queryDescriptionElements.forEach(element => {
+                element.textContent = 'Новый текст';
+            });
+        });
+
+        // Задание 6. Добавление нового элемента в DOM
+        const addElementButton = document.getElementById('addElementButton');
+
+        addElementButton.addEventListener('click', () => {
+            const newParagraph = document.createElement('p');
+            newParagraph.textContent = 'Новый абзац';
+            document.body.appendChild(newParagraph);
+        });
+
+        // Задание 7. Удаление элемента
+        const removeElementButton = document.getElementById('removeElementButton');
+
+        removeElementButton.addEventListener('click', () => {
+            const firstDescription = document.querySelector('.description');
+            if (firstDescription) {
+                firstDescription.remove();
+            }
+        });
+    </script>
+
+</body>
+</html>
