@@ -98,7 +98,6 @@ function reverseText() {
 }
 
 function quiz() {
-    alert("Игра 'Викторина' началась!");
     const quiz = [
         {
             question: "Какой цвет небо?",
@@ -124,6 +123,11 @@ function quiz() {
             const q = quiz[i];
             let optionsString = q.options.join('\n');
             let userAnswer = prompt(`${q.question}\n${optionsString}\nВведите номер вашего ответа:`);
+
+            if (userAnswer === null) {
+                alert('Игра прервана пользователем.');
+                break;
+            }
 
             if (parseInt(userAnswer) === q.correctAnswer) {
                 rightScore++;
@@ -160,8 +164,27 @@ function rockPaperScissors() {
 
 function randomizerColor() {
     const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
-    document.body.style.backgroundColor = randomColor;
-    document.body.style.backgroundImage = 'none';
+    const card = document.getElementById('randomizer_color');
+    
+    if(card) {
+        card.style.backgroundColor = randomColor;
+
+        // Функция для вычисления яркости цвета
+        function getBrightness(hexColor) {
+            const r = parseInt(hexColor.substr(1,2),16);
+            const g = parseInt(hexColor.substr(3,2),16);
+            const b = parseInt(hexColor.substr(5,2),16);
+            return (r*299 + g*587 + b*114) / 1000;
+        }
+    
+        // Если фон тёмный — делаем текст белым, иначе чёрным
+        if(getBrightness(randomColor) < 128) {
+            card.style.color = 'white';
+        } else {
+            card.style.color = 'black';
+        }
+
+    }
     alert("Фон страницы изменен на случайный цвет: " + randomColor);
     document.getElementById('changeColorButton').addEventListener('click', changeBackgroundColor);
 }

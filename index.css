@@ -73,6 +73,34 @@ a {
 .top__button-link{
     transition: all 0.5s;
 }
+.top__underline{
+    height: 90px;
+}
+
+.scroll-container {
+    position: relative;
+    width: 100%;
+    height: 90px;
+}
+
+.scroll-content {
+    display: flex;
+}
+.scroll-image {
+    height: 100%;
+}
+.first-image {
+    animation: scroll 8s linear infinite;
+
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-35%);
+    }
+}
 
 
 .title{
@@ -467,6 +495,9 @@ footer{
 @media(max-width: 767px){
     .top{
         background-image: none;
-        background-image: url(./IMG/r-1-2.jpg);
+        background-image: url(./IMG/bgMob.jpg);
+    }
+    .scroll-container {
+        height: 60px;
     }
 }
