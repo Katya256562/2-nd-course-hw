@@ -78,14 +78,17 @@ a {
 }
 
 .scroll-container {
-    position: relative;
     width: 100%;
-    height: 90px;
+    max-width: 100%;
+    box-sizing: border-box;
+    position: relative; 
 }
 
 .scroll-content {
-    display: flex;
+    position: relative;
+    overflow: hidden;
 }
+
 .scroll-image {
     height: 100%;
 }
